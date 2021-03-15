@@ -3,7 +3,10 @@ import ImageGallery from "react-image-gallery";
 import Image from "next/image";
 
 const images = [
-  { original: "/images/monobloc1.jpg", description: "a chair" },
+  {
+    original: "/images/monobloc1.jpg",
+    description: "Panton Stuhl von Verner Pantones",
+  },
   { original: "/images/monobloc2.jpg", description: "a chair" },
   { original: "/images/monobloc3.jpg", description: "a chair" },
 ];
