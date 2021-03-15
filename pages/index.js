@@ -3,31 +3,27 @@ import ImageGallery from "react-image-gallery";
 import Image from "next/image";
 
 const images = [
-  { original: "/images/monobloc1.jpg" },
-  { original: "/images/monobloc2.jpg" },
-  { original: "/images/monobloc3.jpg" },
+  { original: "/images/monobloc1.jpg", description: "a chair" },
+  { original: "/images/monobloc2.jpg", description: "a chair" },
+  { original: "/images/monobloc3.jpg", description: "a chair" },
 ];
 
 export default function Home() {
   return (
     <div className="h-screen">
-      <header className="flex flex-row px-4 fixed">
+      <header className="flex flex-row px-10 fixed">
         <h1 className="text-3xl font-mono font-bold">MONOBLOC</h1>
-        <Link href="/#first">
-          <a>First</a>
-        </Link>
-        <Link href="/#second">
-          <a>Second</a>
-        </Link>
-        <Link href="/#third">
-          <a>Third</a>
-        </Link>
       </header>
-      <article id="first" className="h-full bg-red-700 pt-10"></article>
-      <article id="second" className="h-full bg-blue-700 pt-10"></article>
-      <article id="third" className="h-full pt-10 flex flex-col">
+
+      <article id="third" className="h-full pt-10 flex flex-row">
         <div className="h-full w-6/12 px-10">
-          <ImageGallery items={images} />
+          <ImageGallery
+            items={images}
+            autoPlay={true}
+            description={images.description}
+            showThumbnails={false}
+            showBullets={true}
+          />
         </div>
         <div className="h-full w-6/12 px-10">
           <h2>
