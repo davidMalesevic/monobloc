@@ -29,7 +29,7 @@ export default function Home() {
           />
         </div>
         <div className="h-full w-6/12 px-10">
-          <h2>
+          <h2 className="text-3xl font-sans">
             Alleine in Italien werden jährlich ca. 10 Millionen Monobloc Stühle
             hergestellt.
           </h2>
