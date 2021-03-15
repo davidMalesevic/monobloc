@@ -1,1 +1,1 @@
-A tribute to the plastic chair that's everwhere. 
+A website built with Next JS and Tailwind CSS
