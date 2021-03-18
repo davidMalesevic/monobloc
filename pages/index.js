@@ -18,6 +18,11 @@ export default function Home() {
         <h1 className="text-3xl font-mono font-bold">MONOBLOC</h1>
       </header>
 
+      <article id="third" className="h-full flex flex-row">
+        <video className="w-full" autoPlay muted>
+          <source src="monobloc.webm" type="video/webm" />
+        </video>
+      </article>
       <article id="third" className="h-full pt-10 flex flex-row">
         <div className="h-full w-6/12 px-10">
           <ImageGallery
