@@ -1,6 +1,8 @@
 import Link from "next/link";
 import ImageGallery from "react-image-gallery";
 import Image from "next/image";
+import React from "react";
+import CountUp from "react-countup";
 
 const images = [
   {
@@ -19,7 +21,11 @@ export default function Home() {
       </header>
 
       <article id="third" className="h-full flex flex-row">
-        <video className="w-full" autoPlay muted>
+        <p className="z-40 text-white font-sans text-3xl absolute top-1/3 left-2/3">
+          <CountUp end={234390243} duration={12} />
+        </p>
+
+        <video className="w-full z-0" autoPlay muted>
           <source src="monobloc.webm" type="video/webm" />
         </video>
       </article>
