@@ -21,11 +21,11 @@ export default function Home() {
       </header>
 
       <article id="third" className="h-full flex flex-row">
-        <p className="z-40 text-white font-sans text-3xl absolute top-1/3 left-2/3">
-          <CountUp end={234390243} duration={12} />
+        <p className="z-40 text-white font-mono text-3xl absolute top-1/3 left-2/3">
+          <CountUp end={234390243} duration={12} separator={"'"} />
         </p>
 
-        <video className="w-full z-0" autoPlay muted>
+        <video autoPlay muted>
           <source src="monobloc.webm" type="video/webm" />
         </video>
       </article>
