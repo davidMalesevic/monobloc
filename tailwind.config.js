@@ -6,7 +6,9 @@ module.exports = {
       sans: ["sofia-pro, sans-serif"],
       mono: ["mono45-headline, monospace; "],
     },
-    extend: {},
+    extend: {
+      textDecoration: ["active"],
+    },
   },
   variants: {
     extend: {},
